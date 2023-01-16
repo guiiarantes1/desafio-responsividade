@@ -243,14 +243,14 @@ footer {
   flex-direction: column;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
-  width: 50%;
+  width: 80%;
 }
 
 .location {
   display: flex;
   padding: 10px;
   line-height: 1.4rem;
-  width: 60%;
+  width: 70%;
  }
 .location img {
   margin-right: 25px;
@@ -281,12 +281,12 @@ footer {
   height: 15px;
 }
 .links {
-  max-width: 400px;
+  max-width: 500px;
   margin-left: 20px;
   display: grid;
   grid-template-columns:
-  minmax(160px, max-content)
-  repeat(auto-fill, 160px);
+  minmax(230px, max-content)
+  repeat(auto-fill, 230px);
   flex-wrap: wrap;
   font-family: "Open Sans", sans-serif;
   padding: 15px 0;
@@ -377,16 +377,22 @@ footer {
     line-height: 1.3rem;
   }
   .info {
-    width: 40%;
+    width: 60%;
     font-size: 1rem;
   }
   .location {
     line-height: 1.4rem;
-    width: 60%;
+    width: 90%;
+  }
+  .location p{
+    width: 100%;
   }
 
   .links {
     width: 30%;
+    grid-template-columns:
+    minmax(160px, max-content)
+    repeat(auto-fill, 160px);
   }
   
   .links p {
@@ -396,7 +402,7 @@ footer {
   }
   
   .socialMedia {
-    width: 30%;
+    width: 25%;
   }
 
   .copyright {
@@ -496,9 +502,46 @@ footer {
 
 
 @media (max-width: 425px) {
+  body{
+    width: 100%;
+  }
+  header{
+    width: 100%;
+    height: auto;
+    background-image: url(./images/bg-hero-mobile.svg);
+  }
+  .headerContain{
+    flex-direction: column; 
+  }
+
+  .logo {
+    padding: 20px;
+    margin: 0;
+  }
+  .logo img{
+    width: 30%;
+  }
+
+  .logo button{
+    font-size: 12px;
+    width: fit-content;
+    padding: 2vh 9vw;
+  }
+
+.contain{
+  width: 100%;
+}
+.imagemHeader{
+  width: 100%;
+}
+
+main{
+  width: 100%;
+}
+
   .contain h1 {
-    font-size: 3.5rem;
-    line-height: 4.5rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
   .contain p {
     font-size: 1.5rem;
