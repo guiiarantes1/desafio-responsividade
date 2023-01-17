@@ -5,8 +5,12 @@
   --VeryPaleCyan: hsl(193, 100%, 96%);
   --VeryDarkCyan: hsl(192, 100%, 9%);
   --GrayishBlue: hsl(208, 11%, 55%);
+  
 }
 
+body{
+  z-index: -1;
+}
 header {
   background-image: url(./images/bg-hero-desktop.svg);
   background-size: contain;
@@ -185,7 +189,7 @@ main {
 .yourUsers {
   display: flex;
   width: 80%;
-  margin-bottom: 30px;
+  margin-bottom: 350px;
   border-radius: 18px;
   padding-left: 7vw;
   align-items: center;
@@ -222,16 +226,53 @@ main {
   width: 60%;
 }
 
+.getStart {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60% !important;
+  height: 280px;
+  border-radius: 20px;
+  box-shadow: 0 1px 10px rgb(0 0 0 / 10%);
+  border: 1px solid rgba(var(--lightGrey), 1);
+  background-color: white;
+  color: black;
+  margin:-170px 22%; 
+  font-family: "Poppins";
+}
+.getStart p {
+  letter-spacing: 0.5px;
+  font-size: 2.4rem;
+  font-weight: 800;
+  padding: 50px;
+}
+
+.getStart button {
+  letter-spacing: 1px;
+  width: fit-content;
+  background-color: var(--pink);
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 3vh 7vw;
+  border-radius: 50px;
+  border: none;
+}
+
 footer {
-  padding-top: 15vh !important;
+  padding-top: 200px !important;
   padding-left: 8vw !important;
   background-color: var(--VeryDarkCyan);
   display: flex;
   color: rgb(214, 216, 219);
-  justify-content: space-between;
+  position: relative;
 }
+
 .logoFooter {
-  margin: auto;
+  margin-bottom: 30px;
 }
 
 .containFooter {
@@ -243,7 +284,7 @@ footer {
   flex-direction: column;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
-  width: 80%;
+  width: 70%;
 }
 
 .location {
@@ -282,7 +323,6 @@ footer {
 }
 .links {
   max-width: 500px;
-  margin-left: 20px;
   display: grid;
   grid-template-columns:
     minmax(230px, max-content)
@@ -324,6 +364,16 @@ footer {
   justify-content: end;
   font-size: 0.8rem;
 }
+/* ----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+----------
+ ----------*/
 
 /* ----------
 ----------
@@ -431,7 +481,7 @@ footer {
   .headerContain {
     justify-content: center;
     padding: 2vh 5vw;
-    }
+  }
 
   .logo {
     padding: 5vh 6vw;
@@ -487,13 +537,13 @@ footer {
 
   main {
     width: 90%;
-  margin: 70px auto;
-  }  
-  .grow{
+    margin: 70px auto;
+  }
+  .grow {
     padding: 0;
     width: 90%;
   }
-  .containGrow{
+  .containGrow {
     width: 60%;
     text-align: center;
   }
@@ -506,15 +556,15 @@ footer {
     line-height: 1.3rem;
   }
 
-  .imageGrow{
-    width: 40% ;
+  .imageGrow {
+    width: 40%;
     padding: 10px;
   }
-  .imageGrow img{
+  .imageGrow img {
     width: 90%;
   }
   /*-------------------------------------------*/
-  .flowing{
+  .flowing {
     width: 90%;
     padding: 0;
   }
@@ -525,20 +575,19 @@ footer {
     font-size: 0.8rem;
     line-height: 1.3rem;
   }
-  .imageFlowing{
+  .imageFlowing {
     padding: 10px;
-
   }
-  .imageFlowing img{
+  .imageFlowing img {
     width: 75%;
   }
 
   /*------------------------------------------*/
-  .yourUsers{
+  .yourUsers {
     padding: 0;
     width: 90%;
   }
-  .containYourUsers{
+  .containYourUsers {
     width: 90%;
     text-align: center;
   }
@@ -551,13 +600,13 @@ footer {
     line-height: 1.3rem;
   }
 
-  .imageYourUsers{
+  .imageYourUsers {
     display: flex;
     justify-content: center !important;
     width: 80% !important;
     padding: 0;
   }
-  .imageYourUsersimg{
+  .imageYourUsersimg {
     padding: 0;
     width: 120% !important;
   }
@@ -670,22 +719,21 @@ footer {
 
   main {
     width: 90%;
-  margin: 70px auto;
+    margin: 70px auto;
   }
-/*-------------------------------------------------*/
-  .grow{
+  /*-------------------------------------------------*/
+  .grow {
     flex-direction: column;
     padding: 0;
     width: 90%;
   }
-  .containGrow{
+  .containGrow {
     width: 75%;
     order: 2;
     text-align: center;
   }
 
   .containGrow h1 {
- 
     font-size: 1.2rem;
   }
   .containGrow p {
@@ -694,30 +742,29 @@ footer {
     margin-top: 10px;
     margin-bottom: 30px;
   }
-  .imageGrow{
+  .imageGrow {
     order: 1;
     width: 100%;
     padding: 30px;
     display: flex;
     justify-content: center !important;
   }
-  .imageGrow img{
+  .imageGrow img {
     width: 80%;
   }
-/*-------------------------------------------------------*/
-  .flowing{
+  /*-------------------------------------------------------*/
+  .flowing {
     flex-direction: column;
     padding: 0;
     width: 90%;
   }
-  .containFlowing{
+  .containFlowing {
     width: 75%;
     order: 2;
     text-align: center;
   }
 
   .containFlowing h1 {
- 
     font-size: 1.2rem;
   }
   .containFlowing p {
@@ -726,31 +773,30 @@ footer {
     margin-top: 10px;
     margin-bottom: 30px;
   }
-  .imageFlowing{
+  .imageFlowing {
     order: 1;
     width: 100%;
     padding: 30px;
     display: flex;
     justify-content: center !important;
   }
-  .imageFlowing img{
+  .imageFlowing img {
     width: 80%;
   }
   /*---------------------------------------------------------*/
-  
-  .yourUsers{
+
+  .yourUsers {
     flex-direction: column;
     padding: 0;
     width: 90%;
   }
-  .containYourUsers{
+  .containYourUsers {
     width: 75%;
     order: 2;
     text-align: center;
   }
 
   .containYourUsers h1 {
- 
     font-size: 1.2rem;
   }
   .containYourUsers p {
@@ -759,20 +805,20 @@ footer {
     margin-top: 10px;
     margin-bottom: 30px;
   }
-  .imageYourUsers{
+  .imageYourUsers {
     order: 1;
     width: 100%;
     padding: 30px;
     display: flex;
     justify-content: center !important;
   }
-  .imageYourUsers img{
+  .imageYourUsers img {
     width: 80%;
   }
 
   /*---------------------------------------------------------*/
 
-  .containFooter{
+  .containFooter {
     flex-direction: column;
     width: 100%;
   }
@@ -803,7 +849,7 @@ footer {
   }
 
   .copyright {
-   justify-content: center;
+    justify-content: center;
     font-size: 0.8rem;
     padding-bottom: 50px;
   }
