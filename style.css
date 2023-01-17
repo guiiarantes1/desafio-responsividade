@@ -423,6 +423,16 @@ footer {
     font-size: 0.8rem;
     line-height: 1.3rem;
   }
+
+  .getStart p {
+    font-size: 2rem;
+    padding: 30px;
+  }
+  
+  .getStart button {
+    padding: 2vh 6vw; 
+  }
+
   .info {
     width: 60%;
     font-size: 1rem;
