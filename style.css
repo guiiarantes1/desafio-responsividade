@@ -251,7 +251,7 @@ footer {
   padding: 10px;
   line-height: 1.4rem;
   width: 70%;
- }
+}
 .location img {
   margin-right: 25px;
   width: 15px;
@@ -285,13 +285,12 @@ footer {
   margin-left: 20px;
   display: grid;
   grid-template-columns:
-  minmax(230px, max-content)
-  repeat(auto-fill, 230px);
+    minmax(230px, max-content)
+    repeat(auto-fill, 230px);
   flex-wrap: wrap;
   font-family: "Open Sans", sans-serif;
   padding: 15px 0;
   height: fit-content;
-
 }
 
 .links p {
@@ -302,7 +301,7 @@ footer {
 
 .socialMedia {
   padding: 15px 20px;
-   display: flex;
+  display: flex;
   justify-content: center;
   width: 25%;
 }
@@ -326,7 +325,6 @@ footer {
   font-size: 0.8rem;
 }
 
-
 /* ----------
 ----------
 ----------
@@ -338,8 +336,7 @@ footer {
 ----------
  ----------*/
 
-
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 768px) and (max-width: 1024px) {
   .contain h1 {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -384,23 +381,23 @@ footer {
     line-height: 1.4rem;
     width: 90%;
   }
-  .location p{
+  .location p {
     width: 100%;
   }
 
   .links {
     width: 30%;
     grid-template-columns:
-    minmax(160px, max-content)
-    repeat(auto-fill, 160px);
+      minmax(160px, max-content)
+      repeat(auto-fill, 160px);
   }
-  
+
   .links p {
     width: 120px;
     font-size: 1.1rem;
     height: 40px;
   }
-  
+
   .socialMedia {
     width: 25%;
   }
@@ -421,7 +418,7 @@ footer {
 ----------
  ----------*/
 
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 426px) and (max-width: 767px) {
   .contain h1 {
     font-size: 3.5rem;
     line-height: 4.5rem;
@@ -470,13 +467,13 @@ footer {
   .links {
     width: 30%;
   }
-  
+
   .links p {
     width: 120px;
     font-size: 1.1rem;
     height: 40px;
   }
-  
+
   .socialMedia {
     width: 30%;
   }
@@ -485,8 +482,6 @@ footer {
     font-size: 0.8rem;
   }
 }
-
-
 
 /* ----------
 ----------
@@ -499,107 +494,208 @@ footer {
 ----------
  ----------*/
 
-
-
 @media (max-width: 425px) {
-  body{
+  body {
     width: 100%;
   }
-  header{
+
+  header {
     width: 100%;
     height: auto;
     background-image: url(./images/bg-hero-mobile.svg);
   }
-  .headerContain{
-    flex-direction: column; 
+  .headerContain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8vh 12vw;
   }
 
   .logo {
     padding: 20px;
     margin: 0;
   }
-  .logo img{
+  .logo img {
     width: 30%;
   }
 
-  .logo button{
-    font-size: 12px;
+  .logo button {
+    font-size: 0.7rem;
     width: fit-content;
-    padding: 2vh 9vw;
+    padding: 1vh 9vw;
   }
 
-.contain{
-  width: 100%;
-}
-.imagemHeader{
-  width: 100%;
-}
-
-main{
-  width: 100%;
-}
+  .contain {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
   .contain h1 {
-    font-size: 2rem;
-    line-height: 2.5rem;
+    width: 100%;
+    font-size: 1.7rem;
+    line-height: 2.7rem;
+    text-align: center;
   }
   .contain p {
-    font-size: 1.5rem;
-    line-height: 2rem;
+    text-align: center;
+    width: 95%;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
   }
   .contain button {
-    font-size: 1.5rem;
-    padding: 1vw 8vh;
+    margin: auto;
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 3vw 8vh;
+  }
+
+  .imagemHeader {
+    margin-top: 50px;
+    width: 100%;
   }
   .imagemHeader img {
     width: 100%;
   }
+
+  main {
+    width: 90%;
+  margin: 70px auto;
+  }
+/*-------------------------------------------------*/
+  .grow{
+    flex-direction: column;
+    padding: 0;
+    width: 90%;
+  }
+  .containGrow{
+    width: 75%;
+    order: 2;
+    text-align: center;
+  }
+
   .containGrow h1 {
-    font-size: 1.4rem;
+ 
+    font-size: 1.2rem;
   }
   .containGrow p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 1.3rem;
+    margin-top: 10px;
+    margin-bottom: 30px;
   }
+  .imageGrow{
+    order: 1;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center !important;
+  }
+  .imageGrow img{
+    width: 80%;
+  }
+/*-------------------------------------------------------*/
+  .flowing{
+    flex-direction: column;
+    padding: 0;
+    width: 90%;
+  }
+  .containFlowing{
+    width: 75%;
+    order: 2;
+    text-align: center;
+  }
+
   .containFlowing h1 {
-    font-size: 1.4rem;
+ 
+    font-size: 1.2rem;
   }
   .containFlowing p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 1.3rem;
+    margin-top: 10px;
+    margin-bottom: 30px;
   }
+  .imageFlowing{
+    order: 1;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center !important;
+  }
+  .imageFlowing img{
+    width: 80%;
+  }
+  /*---------------------------------------------------------*/
+  
+  .yourUsers{
+    flex-direction: column;
+    padding: 0;
+    width: 90%;
+  }
+  .containYourUsers{
+    width: 75%;
+    order: 2;
+    text-align: center;
+  }
+
   .containYourUsers h1 {
-    font-size: 1.4rem;
+ 
+    font-size: 1.2rem;
   }
   .containYourUsers p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 1.3rem;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .imageYourUsers{
+    order: 1;
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center !important;
+  }
+  .imageYourUsers img{
+    width: 80%;
+  }
+
+  /*---------------------------------------------------------*/
+
+  .containFooter{
+    flex-direction: column;
+    width: 100%;
   }
   .info {
-    width: 40%;
+    width: 80%;
     font-size: 1rem;
   }
   .location {
     line-height: 1.4rem;
-    width: 60%;
+    width: 100%;
   }
 
   .links {
-    width: 30%;
+    margin-top: 35px;
+    display: flex;
+    width: 50%;
   }
-  
+
   .links p {
     width: 120px;
     font-size: 1.1rem;
     height: 40px;
   }
-  
+
   .socialMedia {
     width: 30%;
+    margin: auto;
   }
 
   .copyright {
+   justify-content: center;
     font-size: 0.8rem;
+    padding-bottom: 50px;
   }
 }
-
