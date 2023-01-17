@@ -742,6 +742,26 @@ footer {
     width: 100%;
   }
 
+  .getStart {
+    width: 90% !important;
+    height: 200px;
+    color: black;
+    margin:-130px 5%; 
+    font-family: "Poppins";
+  }
+  .getStart p {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+  
+  .getStart button {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    padding: 2vh 11vw;
+  }
+
+
   main {
     width: 90%;
     margin: 70px auto;
@@ -814,11 +834,13 @@ footer {
     flex-direction: column;
     padding: 0;
     width: 90%;
+    margin-bottom: 150px !important;
   }
   .containYourUsers {
     width: 75%;
     order: 2;
     text-align: center;
+  
   }
 
   .containYourUsers h1 {
@@ -843,6 +865,9 @@ footer {
 
   /*---------------------------------------------------------*/
 
+  footer{
+    padding-top: 120px !important ;
+  }
   .containFooter {
     flex-direction: column;
     width: 100%;
