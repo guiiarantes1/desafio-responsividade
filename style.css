@@ -712,7 +712,7 @@ footer {
   .logo button {
     font-size: 0.7rem;
     width: fit-content;
-    padding: 1vh 9vw;
+    padding: 0.7vh 9vw;
   }
 
   .contain {
@@ -880,7 +880,7 @@ footer {
     width: 100%;
   }
   .info {
-    width: 80%;
+    width: 85%;
     font-size: 1rem;
   }
   .location {
